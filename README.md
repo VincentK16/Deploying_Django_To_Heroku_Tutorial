@@ -140,7 +140,7 @@ DATABASES = {
         'HOST': os.environ.get('DATABASE_HOST'),
         'PORT': os.environ.get('DATABASE_PORT'),
     },
-    '': {
+    'db2': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get('DATABASE_NAME_2'),
         'USER': os.environ.get('DATABASE_USER_2'),
@@ -171,31 +171,6 @@ Image.objects.using('db2').all()
 
 更多資料可參考 [Django manually-selecting-a-database](https://docs.djangoproject.com/en/1.11/topics/db/multi-db/#manually-selecting-a-database)
 
-## 特色
-
-* 使用 [lazyload](https://github.com/verlok/lazyload) 載入大量圖片。
-
-* 圖片來源為爬蟲，可參考 [auto_crawler_ptt_beauty_image](https://github.com/twtrubiks/auto_crawler_ptt_beauty_image) 。
-
-## 安裝套件
-
-確定電腦有安裝 [Python](https://www.python.org/) 之後
-
-請在  cmd  ( 命令提示字元 ) 輸入以下指令
-
-```cmd
-pip install -r requirements.txt
-```
-
-## 執行畫面
-
-首頁
-
-![](http://i.imgur.com/Ul9qrkN.png)
-
-滑鼠游標移到圖片上，可刪除圖片
-
-![](http://i.imgur.com/nSuslHP.png)
 
 ## 執行環境
 
@@ -207,6 +182,14 @@ pip install -r requirements.txt
 * [heroku-django-template](https://github.com/heroku/heroku-django-template)
 * [lazyload](https://github.com/verlok/lazyload)
 * [bootstrap-sweetalert](https://github.com/lipis/bootstrap-sweetalert)
+
+## Donation
+
+文章都是我自己研究內化後原創，如果有幫助到您，也想鼓勵我的話，歡迎請我喝一杯咖啡:laughing:
+
+![alt tag](https://i.imgur.com/LRct9xa.png)
+
+[贊助者付款](https://payment.opay.tw/Broadcaster/Donate/9E47FDEF85ABE383A0F5FC6A218606F8)
 
 ## License
 
